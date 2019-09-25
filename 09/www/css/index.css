@@ -106,6 +106,6 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-#video{
+#photo, #video{
     display: none;
 }
