@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>status</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class = "row">
+                <div class="alert alert-danger col-xs-12" role="alert" id="network-alert"> It looks like there is no Internet connection. Your data and changes will not be saved at this point. Please try again when you reconnect to the Internet.
+                </div>
+            </div>
+            <div class = "row">
+                <div class="alert alert-info col-xs-12" role="alert" id="network-status">
+                </div>
+            </div>
+            <div class = "row">
+                <div class="card offset-xs-2 col-xs-10">
+                  <div class="card-body">
+                    <h5 class="card-title">Device Status</h5>
+                    <div class= "row">
+                        <div class="col-xs-4"><strong>Device Manufacturer:</strong></div>
+                        <div class="col-xs-8" id = "manufacturer"></div>
+                    </div>
+                    <div class= "row">
+                        <div class="col-xs-4"><strong>Device Model:</strong></div>
+                        <div class="col-xs-8" id = "model"></div>
+                    </div>
+                    <div class= "row">
+                        <div class="col-xs-4"><strong>Device Platform:</strong></div>
+                        <div class="col-xs-8" id = "platform"></div>
+                    </div>
+                    <div class= "row">
+                        <div class="col-xs-4"><strong>Device version:</strong></div>
+                        <div class="col-xs-8" id = "version"></div>
+                    </div>
+                    <div class= "row">
+                        <div class="col-xs-4"><strong>Is it an emulater?</strong></div>
+                        <div class="col-xs-8" id = "emulater"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
