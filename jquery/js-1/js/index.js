@@ -1,26 +1,26 @@
 $(document).ready(function(){
 	// this is where your code should go
-	$("#test-menu1").click(function(){
-		alert($("#test").text());
+	$("#menu1").click(function(){
+		alert($("#paragraph1").text());
 
 	});
 
-	$("#test-menu2").click(function(){
-		alert($("#test").html());
+	$("#menu2").click(function(){
+		alert($("#paragraph2").html());
 
 	});
 
-	$("#test-menu3").click(function(){
-		alert($("#url-test").attr("href"));
+	$("#menu3").click(function(){
+		alert($("#textfield1").val());
 
 	});
 
-	$("#test-menu4").click(function(){
-		alert($("#img-test").attr("src"));
+	$("#menu4").click(function(){
+		alert($("#url1").attr("href"));
 	});
 
-	$("#test-menu5").click(function(){
-		alert($("#button-test").val());
+	$("#menu5").click(function(){
+		alert($("#img1").attr("src"));
 	});
 
 
