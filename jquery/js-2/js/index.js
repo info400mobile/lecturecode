@@ -23,28 +23,5 @@ $(document).ready(function(){
 		$("#img1").attr("src","images/twc-logo.gif");
 	});
 
-	$("#test-menu1").click(function(){
-		$("#test-sentence").html("This paragraph contains a <i>italic</i> sentence.");
-
-	});
-
-	$("#test-menu2").click(function(){
-		$("#url-test").text("the Cordova document");
-
-	});
-
-	$("#test-menu3").click(function(){
-		$("#url-test").attr("href", "https://cordova.apache.org/docs/en/latest/");
-
-	});
-
-	$("#test-menu4").click(function(){
-		$("#img-test").attr("src","images/cordova-logo.png");
-	});
-
-	$("#test-menu5").click(function(){
-		$("#button-test").val("We are all buttons.");
-	});
-
 });
 
