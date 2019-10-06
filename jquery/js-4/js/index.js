@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$("#menu3").click(function(){
 		$("ol").addClass("list-group");
 		$("ol").children().each(function(){
-			$(this).addClass("list-group-item");
+			$(this).addClass("list-group-item active");
 		});
 
 		$("ol").children().first().addClass("active");

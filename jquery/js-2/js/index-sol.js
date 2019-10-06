@@ -23,8 +23,9 @@ $(document).ready(function(){
 		$("#img1").attr("src","images/twc-logo.gif");
 	});
 
+
 	$("#test-menu1").click(function(){
-		$("#test-sentence").html("This paragraph contains a <i>italic</i> sentence.");
+		$("#test-sentence").html("This paragragh contains a <i>italic</i> sentence");
 
 	});
 
@@ -34,8 +35,7 @@ $(document).ready(function(){
 	});
 
 	$("#test-menu3").click(function(){
-		$("#url-test").attr("href", "https://cordova.apache.org/docs/en/latest/");
-
+		$("#url-test").attr("href","https://cordova.apache.org/docs/en/latest/");
 	});
 
 	$("#test-menu4").click(function(){
@@ -45,6 +45,5 @@ $(document).ready(function(){
 	$("#test-menu5").click(function(){
 		$("#button-test").val("We are all buttons.");
 	});
-
 });
 

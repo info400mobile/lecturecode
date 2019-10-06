@@ -8,6 +8,18 @@ $(document).ready(function(){
 	//   (1) change the text from "submit" to "done"
 	//   (2) change the color to grey (You can get color hex from https://www.color-hex.com/color-palettes/)
 
-	
+	$("#submit").click(function(){
+		var fname = $("#fname").val();
+		var lname = $("#lname").val();
+		var country = $("#country option:selected").val();
+		var content = $("#subject").val();
+
+
+		$(".card-body").append("<p>Your Name is " + fname + " " + lname + "</p>");
+		$(".card-body").append("<p>You come from " + country + "</p>");
+		$(".card-body").append("<p>You want to tell us: " + content + "</p>");
+		$("#submit").css("background-color", "grey");
+
+	});
 });
 
