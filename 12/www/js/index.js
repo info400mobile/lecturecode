@@ -18,7 +18,7 @@
  */
 
 function cameraSuccess(imageURI) {
-    alert(imageURI);
+    // alert(imageURI);
 
     window.resolveLocalFileSystemURL(imageURI, function(fileEntry) {
         fileEntry.file(function(file) {

@@ -28,7 +28,7 @@ function cameraError(message) {
     alert("Unable to obtain picture:" + message);
 }
 
-/*function writeFile(fileEntry, dataObj) {
+function writeFile(fileEntry, dataObj) {
     // Create a FileWriter object for our FileEntry (log.txt).
     fileEntry.createWriter(function (fileWriter) {
 
@@ -75,7 +75,7 @@ function onErrorCreateFile(error){
 
 function onErrorReadFile(error){
     alert(error);
-}*/
+}
 
 
 var app = {

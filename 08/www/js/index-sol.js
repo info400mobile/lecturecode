@@ -41,7 +41,7 @@ function onGeolocationSuccess(position){
     //       'Timestamp: '         + position.timestamp                + '\n'
     // );
 
-    
+
     $("#latitude").text(position.coords.latitude);
     $("#longitude").text(position.coords.longitude);
     $("#altitute").text(position.coords.altitude);
@@ -73,8 +73,6 @@ var app = {
         navigator.geolocation.getCurrentPosition(onGeolocationSuccess,
                                          onGeolocationError,
                                          { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
-
-
         
     },
 
