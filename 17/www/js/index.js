@@ -17,13 +17,6 @@
  * under the License.
  */
 var firebaseConfig = {
-  apiKey: "AIzaSyBkXm3hMlkBHwR9ZhPVdT3nBSDxh_XKq40",
-  authDomain: "lecture17-79f69.firebaseapp.com",
-  databaseURL: "https://lecture17-79f69.firebaseio.com",
-  projectId: "lecture17-79f69",
-  storageBucket: "lecture17-79f69.appspot.com",
-  messagingSenderId: "57268603969",
-  appId: "1:57268603969:web:4c11c1e73d4c2cbd4f8ac0"
 };
 
 function initApp() {
